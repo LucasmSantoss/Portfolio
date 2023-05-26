@@ -7,42 +7,36 @@ import email from '../../Img/Email.png';
 
 function Footer() {
   return (
-    <div className='bg-black flex flex-col lg:flex-row justify-around text-orange-600 text-3xl p-5'>
-      <iframe
-        className='h-60 w-full lg:w-2/4 mb-5 lg:mb-0'
-        src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d100584.56676730582!2d-57.68293440421718!3d-38.01753789945654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d94d19d34209%3A0xdd9670804bfed126!2sMar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1683052216792!5m2!1ses-419!2sar'
-        allowFullScreen=''
-        loading='lazy'
-        referrerPolicy='no-referrer-when-downgrade'></iframe>
-      <div className='flex flex-col items-center lg:items-start text-white'>
+    <div className='fixed bottom-0 left-0 right-0 flex flex-col lg:flex-row justify-around text-orange-600 text-xl p-5 '>
+      <div className='flex justify-around lg:items-start text-white'>
         <div className='flex m-3 p-1'>
-          <Img className='h-10' src={wp}></Img>
+          <Img className='h-7' src={wp}></Img>
           <a
-            className='text-3xl pl-1 transition duration-700 ease-in-out bg-green'
+            className='text-xl pl-1 transition duration-700 ease-in-out bg-green'
             href='tel:+542235065893'>
-            Teléfono
+            Phone
           </a>
         </div>
         <div className='flex m-3 p-1'>
-          <Img className='h-10' src={github}></Img>
+          <Img className='h-7' src={github}></Img>
           <a
-            className='text-3xl pl-1 transition duration-700 ease-in-out bg-green'
+            className='text-xl pl-1 transition duration-700 ease-in-out bg-green'
             href='https://github.com/LucasmSantoss'>
             GitHub
           </a>
         </div>
         <div className='flex m-3 p-1'>
-          <Img className='h-10' src={linkedin}></Img>
+          <Img className='h-7' src={linkedin}></Img>
           <a
-            className='text-3xl pl-1 transition duration-700 ease-in-out bg-green'
+            className='text-xl pl-1 transition duration-700 ease-in-out bg-green'
             href='https://www.linkedin.com/in/lucas-santos-b133001b9/'>
             LinkedIn
           </a>
         </div>
         <div className='flex m-3 p-1'>
-          <Img className='h-10' src={email}></Img>
+          <Img className='h-7' src={email}></Img>
           <a
-            className='text-3xl pl-1 transition duration-700 ease-in-out bg-green'
+            className='text-xl pl-1 transition duration-700 ease-in-out bg-green'
             href='mailto:lucasmsantoss95@hotmail.com'>
             Email
           </a>

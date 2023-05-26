@@ -1,20 +1,15 @@
-import Home from './Components/Homes/Home.jsx'
-import Header from './Components/Header/Header.jsx'
-import Footer from './Components/Footer/Footer.jsx'
-
-import './index.css';
+import React from 'react';
+import './App.css';
+import { router } from './Pages/index.js'
+import { Provider } from 'react-redux';
+import { RouterProvider } from 'react-router-dom';
+import store from './Store/store.js';
 
 function App() {
   return (
-      <div className="bg-emerald-950 min-h-full">
-        <Header/>
-     
-
-      <Home/>
- 
-      
-      <Footer/>
-      </div>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   );
 }
 
