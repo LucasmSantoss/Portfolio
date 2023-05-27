@@ -3,13 +3,46 @@ import Img from "../Image/Image";
 import matear from "../../Img/matearr.png";
 import minga from "../../Img/minga.png";
 import petshop from "../../Img/petshop.png";
-
 import mingamobile from '../../Img/mingamobile.png'
 import matearmobile from '../../Img/matearmobile.png'
+import Swal from 'sweetalert2';
 
 
 
 function Proyects() {
+
+  const handleLinkClick = () => {
+    Swal.fire({
+      title: 'Redireccionar a YouTube',
+      text: '¿Deseas continuar?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Aceptar',
+      cancelButtonText: 'Cancelar',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Aquí puedes agregar la lógica para redirigir al usuario a YouTube
+        window.location.href = 'https://www.youtube.com/watch?v=PGmOuw-OhoQ&t=5s&ab_channel=LucasSantosDev';
+      }
+    });
+  };
+
+  const handleLinkClick2 = () => {
+    Swal.fire({
+      title: 'Redireccionar a YouTube',
+      text: '¿Deseas continuar?',
+      icon: 'question',
+      showCancelButton: true,
+      confirmButtonText: 'Aceptar',
+      cancelButtonText: 'Cancelar',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Aquí puedes agregar la lógica para redirigir al usuario a YouTube
+        window.location.href = 'https://youtu.be/7zwULEhREfQ';
+      }
+    });
+  };
+
 
   
   return (
@@ -36,7 +69,7 @@ function Proyects() {
       <h2 className="text-center p-2 text-3xl ">
         Matear Mobile
       </h2>
-      <a className="items-center" href="https://www.youtube.com/watch?v=PGmOuw-OhoQ&t=5s&ab_channel=LucasSantosDev">
+      <a className="items-center" onClick={handleLinkClick}>
         <Img className="rounded-md m-auto p-2 w-1/4" src={matearmobile} />
       </a>
       <p className="text-1xl p-2">
@@ -67,7 +100,7 @@ function Proyects() {
             <h2 className="text-center p-2 text-3xl ">
               Minga Mobile
             </h2>
-            <a href="https://minga-gropublanco.vercel.app/">
+            <a onClick={handleLinkClick2}>
               <Img className="rounded-md m-auto p-2 w-1/4" src={mingamobile} />
             </a>
             <p className="text-1xl p-2">
