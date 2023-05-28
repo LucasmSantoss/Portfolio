@@ -11,7 +11,7 @@ function Index() {
       </div>
       <div>
         <p className="p-5 text-center  text-lg sm:text-xl md:text-2xl pb-5 transition-transform transform translate-x-[-100%] sm:translate-x-0 animate-slide-in-right ">
-          Mi nombre es Lucas Matias Santos y soy Full Stack MERN Developer & Mobile apps, desarrollo mis aplicaciones con estas tecnologias | HTML5 | CSS3 | Javascript | React |
+          Mi nombre es Lucas Matias Santos y soy Full Stack MERN Developer & Mobile apps, desarrollo mis aplicaciones con estas tecnologias | HTML5 | CSS3 | Javascript | Tailwind | React |
           React Native | Express | MongoDB | NodeJS | Redux | Redux Toolkit |
           Github
         </p>

@@ -90,7 +90,7 @@ function Proyects() {
             </a>
             <p className="text-1xl p-2">
               Website producida y dedicada para la lectura de Mangas, donde el
-              usuario puede interactuar con la pagina, comentar y esta agregar
+              usuario puede interactuar con la pagina, comentar y hasta agregar
               en su perfil su Manga Favorito!!.
             </p>
           </div>

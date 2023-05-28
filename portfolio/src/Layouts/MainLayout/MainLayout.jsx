@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 import fondo from '../../Img/fondo.jpg'
 
 
-function IndexLayout() {
+function MainLayout() {
 
     const backgroundStyle = {
         backgroundImage: `url(${fondo})`,
@@ -20,4 +20,4 @@ function IndexLayout() {
   );
 }
 
-export default IndexLayout;
+export default MainLayout;

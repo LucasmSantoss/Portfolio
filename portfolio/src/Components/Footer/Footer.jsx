@@ -33,14 +33,7 @@ function Footer() {
             LinkedIn
           </a>
         </div>
-        <div className='flex m-3 p-1'>
-          <Img className='h-7' src={email}></Img>
-          <a
-            className='text-xl pl-1 transition duration-700 ease-in-out bg-green'
-            href='mailto:lucasmsantoss95@hotmail.com'>
-            Email
-          </a>
-        </div>
+        
       </div>
     </div>
   );
