@@ -11,13 +11,13 @@ function Header() {
         <Anchor to="/"><Img className="h-12 " src={favi}></Img></Anchor>
       </div>
       <div className="flex items-center">
-        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8" to="/">
+        <Anchor className="p-2 text-xl hover:underline-offset-8 focus:underline-offset-8" to="/">
           Home
         </Anchor>
-        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8" to="/portfolio">
+        <Anchor className="p-2 text-xl hover:underline-offset-8 focus:underline-offset-8" to="/portfolio">
           PortFolio
         </Anchor>
-        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8 " to="/contact">
+        <Anchor className="p-2 text-xl hover:underline-offset-8 focus:underline-offset-8 " to="/contact">
           Contact
         </Anchor>
       </div>
