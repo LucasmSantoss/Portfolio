@@ -55,9 +55,9 @@ function Contact() {
   >
     <div className="grid grid-cols-1 gap-4">
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl">Nombre:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-41"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Nombre:</span>
         <input
-          className={`text-black w-full md:w-96 h-8 p-2 ${
+          className={`text-black w-full md:w-96 h-8 p-2  ${
             name ? "bg-white" : "bg-transparent"
           } border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500`}
           type="text"
@@ -68,9 +68,9 @@ function Contact() {
       </label>
 
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl">Email:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Email:</span>
         <input
-          className={`text-black w-full md:w-96 h-8 p-2 ${
+          className={`text-black w-full md:w-96 h-8 p-2  ${
             email ? "bg-white" : "bg-transparent"
           } border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500`}
           type="email"
@@ -81,7 +81,7 @@ function Contact() {
       </label>
 
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl">Mensaje:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Mensaje:</span>
         <textarea
           className={`text-black w-full md:w-96 p-2 ${
             message ? "bg-white" : "bg-transparent"

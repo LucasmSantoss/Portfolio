@@ -11,8 +11,8 @@ function Footer() {
   <div className="flex justify-center lg:justify-start items-center text-white">
     <div className="flex m-3 p-1">
       <Img className="h-7" src={wp} alt="WhatsApp"></Img>
-      <a
-        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"
+      <a target="_blank"
+        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}
         href="tel:+542235065893"
       >
         Phone
@@ -20,8 +20,8 @@ function Footer() {
     </div>
     <div className="flex m-3 p-1">
       <Img className="h-7" src={github} alt="GitHub"></Img>
-      <a
-        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"
+      <a target="_blank"
+        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}
         href="https://github.com/LucasmSantoss"
       >
         GitHub
@@ -29,8 +29,8 @@ function Footer() {
     </div>
     <div className="flex m-3 p-1">
       <Img className="h-7" src={linkedin} alt="LinkedIn"></Img>
-      <a
-        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"
+      <a target="_blank"
+        className="text-xl pl-1 transition duration-700 ease-in-out bg-green"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}
         href="https://www.linkedin.com/in/lucas-santos-b133001b9/"
       >
         LinkedIn

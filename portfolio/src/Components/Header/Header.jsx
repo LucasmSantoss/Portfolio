@@ -8,16 +8,16 @@ function Header() {
   return (
     <div className=" text-white flex justify-between p-2 sm:p-5 sm:h-24 min-h-0">
       <div>
-        <Img className="h-12" src={favi}></Img>
+        <Anchor to="/"><Img className="h-12 " src={favi}></Img></Anchor>
       </div>
       <div className="flex items-center">
-        <Anchor className="p-2 text-xl hover:underline focus:underline " to="/">
+        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8" to="/">
           Home
         </Anchor>
-        <Anchor className="p-2 text-xl hover:underline focus:underline " to="/portfolio">
+        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8" to="/portfolio">
           PortFolio
         </Anchor>
-        <Anchor className="p-2 text-xl hover:underline focus:underline " to="/contact">
+        <Anchor className="p-2 text-xl hover:underline focus:underline-offset-8 " to="/contact">
           Contact
         </Anchor>
       </div>
