@@ -15,7 +15,7 @@ function Footer() {
         className="text-xl pl-1 transition duration-700 ease-in-out bg-green"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}
         href="tel:+542235065893"
       >
-        Phone
+        Whatsapp
       </a>
     </div>
     <div className="flex m-3 p-1">

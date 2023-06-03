@@ -41,7 +41,7 @@ function Proyects() {
 
   return (
     <div className="p-5 text-white">
-      <h2 className="text-center text-4xl md:text-7xl animate-slide-in-down p-4">
+      <h2 className="text-center text-4xl md:text-7xl animate-slide-in-down p-4" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1.5)" }}>
         Mis proyectos realizados hasta la fecha
       </h2>
       <div className="flex flex-wrap justify-center md:justify-around p-5 shadow-2xl">

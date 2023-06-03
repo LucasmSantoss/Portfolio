@@ -20,6 +20,9 @@ function Header() {
         <Anchor className="p-2 text-xl hover:underline-offset-8 focus:underline-offset-8 " to="/contact">
           Contact
         </Anchor>
+        <Anchor className="p-2 text-xl hover:underline-offset-8 focus:underline-offset-8 " to="/recomendations">
+          Recommendations
+        </Anchor>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ function Index() {
   return (
     <div className="text-emerald-50 flex flex-col justify-center items-center h-4/5 mx-auto">
     <div className="p-5">
-      <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl p-3 animate-slide-in-left">
+      <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl p-3 animate-slide-in-left" style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1.5)" }}>
         Lucas Santos
       </h1>
     </div>
