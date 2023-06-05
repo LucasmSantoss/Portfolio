@@ -34,7 +34,7 @@ function RecommendationsCarousel() {
         className="text-white text-center text-2xl md:text-5xl p-4 animate-slide-in-down p-5"
         style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 1.5)" }}
       >
-        Recomendaciones de otros colegas hechas en LinkedIn.
+        Recomendaciones de LinkedIn.
       </h1>
       <div className="overflow-hidden">
         <Carousel
