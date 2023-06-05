@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import Swal from "sweetalert2";
 
+
 function Contact() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -101,6 +102,7 @@ function Contact() {
       Enviar
     </button>
   </form>
+  
 </div>
 
   );
