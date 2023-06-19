@@ -2,7 +2,7 @@ import Portfolio from "./Portfolio/Portfolio.jsx";
 import MainLayout from "../Layouts/MainLayout/MainLayout.jsx";
 import IndexLayout from "../Layouts/IndexLayout/IndexLayout.jsx";
 import Home from "./Home/Home.jsx";
-import Recomendations from "./Recomendations/Recomendations.jsx";
+// import Recomendations from "./Recomendations/Recomendations.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
 import Contact from "./Contact/Contact.jsx";
