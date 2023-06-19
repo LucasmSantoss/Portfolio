@@ -4,6 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import recommendationsData from "../../data.json"; // Importar el archivo JSON
 import Swal from "sweetalert2";
 import './carousel.css'
+import Img from "../Image/Image";
 
 function RecommendationsCarousel() {
   
@@ -72,7 +73,7 @@ function RecommendationsCarousel() {
               <div className="bg-white rounded-lg shadow-lg flex flex-col gap-5 p-4">
                 <div className="flex items-center justify-center">
                   <div className="w-12 h-12 mr-4 rounded-full overflow-hidden">
-                    <img
+                    <Img
                       className="w-full h-full object-cover"
                       src={recommendation.imagen}
                       alt={recommendation.nombre}

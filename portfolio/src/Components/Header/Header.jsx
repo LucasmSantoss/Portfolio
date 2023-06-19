@@ -47,7 +47,7 @@ function Header() {
               Contact
             </Anchor>
           </li>
-          <li>
+          {/* <li>
             <Anchor
               className="text-xl hover:underline"
               activeClassName="font-bold"
@@ -55,7 +55,7 @@ function Header() {
             >
               Recommendations
             </Anchor>
-          </li>
+          </li> */}
         </ul>
       </nav>
       <div className="sm:hidden">
