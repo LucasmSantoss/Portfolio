@@ -38,3 +38,8 @@
     animation: slide-in-down 1.5s ease-in-out forwards;
   }
   
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
