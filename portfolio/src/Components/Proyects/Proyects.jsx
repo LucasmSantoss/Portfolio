@@ -48,13 +48,13 @@ function Proyects() {
         <div className="flex w-full md:w-2/4 h-auto md:h-1/4 p-1 m-1 rounded-md animate-slide-in-left">
           <div className="p-3">
             <h2 className="text-center text-2xl md:text-3xl p-2"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Matear</h2>
-            <a href="https://mate-ar.vercel.app/" className="block">
+            <a href="https://mate-ar.vercel.app/" target="_blank" className="block">
               <Img
                 className="rounded-md object-contain h-auto md:h-full p-2 mx-auto"
                 src={matear}
               />
             </a>
-            <p className="text-sm md:text-lg p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
+            <p className="text-sm md:text-lg p-2"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
               E-commerce dedicada a la industria nacional Argentina del mate y
               sus derivados, en búsqueda de exportar el producto a otros países.
             </p>
@@ -65,7 +65,7 @@ function Proyects() {
             <h2 className="text-center text-2xl md:text-3xl p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
               Matear Mobile
             </h2>
-            <a className="block" onClick={handleLinkClick}>
+            <a className="block" target="_blank" onClick={handleLinkClick}>
               <Img
                 className="rounded-md mx-auto p-2 w-1/4"
                 src={matearmobile}
@@ -80,7 +80,7 @@ function Proyects() {
         <div className="flex w-full md:w-2/4 h-auto md:h-1/4 p-1 m-1 rounded-md shadow-2xl animate-slide-in-left">
           <div className="p-3">
             <h2 className="text-center text-2xl md:text-3xl p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Minga</h2>
-            <a href="https://minga-gropublanco.vercel.app/" className="block">
+            <a href="https://minga-gropublanco.vercel.app/" target="_blank" className="block">
               <Img className="rounded-md p-2 mx-auto" src={minga} />
             </a>
             <p className="text-sm md:text-lg p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
@@ -95,7 +95,7 @@ function Proyects() {
             <h2 className="text-center text-2xl md:text-3xl p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
               Minga Mobile
             </h2>
-            <a onClick={handleLinkClick2} className="block">
+            <a onClick={handleLinkClick2} target="_blank" className="block">
               <Img className="rounded-md mx-auto p-2 w-1/4" src={mingamobile} />
             </a>
             <p className="text-sm md:text-lg p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
@@ -111,6 +111,7 @@ function Proyects() {
             <a
               href="https://lucasmsantoss.github.io/Pet-shop/"
               className="block"
+              target="_blank"
             >
               <Img className="rounded-md" src={petshop} />
             </a>
