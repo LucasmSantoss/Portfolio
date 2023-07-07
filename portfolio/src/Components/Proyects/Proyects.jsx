@@ -10,24 +10,24 @@
 // import { Element } from 'react-scroll';
 
 // function Proyects() {
-//   const handleLinkClick = (url) => {
-//     Swal.fire({
-//       title: "Redireccionar a YouTube",
-//       text: "¿Deseas continuar?",
-//       icon: "question",
-//       showCancelButton: true,
-//       confirmButtonText: "Aceptar",
-//       cancelButtonText: "Cancelar",
-//     }).then((result) => {
-//       if (result.isConfirmed) {
-//         window.open(url, "_blank");
-//       }
-//     });
-//   };
+  // const handleLinkClick = (url) => {
+  //   Swal.fire({
+  //     title: "Redireccionar a YouTube",
+  //     text: "¿Deseas continuar?",
+  //     icon: "question",
+  //     showCancelButton: true,
+  //     confirmButtonText: "Aceptar",
+  //     cancelButtonText: "Cancelar",
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       window.open(url, "_blank");
+  //     }
+  //   });
+  // };
 
 //   return (
 //     <Element>
-//       <div id="glow2" />
+//     
 //       <div className="p-5 text-white animate__animated animate__fadeIn">
 
       
@@ -86,11 +86,11 @@
 //               <a className="block" onClick={() => handleLinkClick("https://youtu.be/7zwULEhREfQ")}  >
 //                 <Img className="rounded-md mx-auto p-2 w-1/4" src={mingamobile} />
 //               </a>
-//               <p className="text-sm md:text-lg p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
-//                 Website producida y dedicada para la lectura de Mangas, donde el
-//                 usuario puede interactuar con la página, comentar y hasta agregar
-//                 en su perfil su Manga Favorito.
-//               </p>
+              // <p className="text-sm md:text-lg p-2" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>
+              //   Website producida y dedicada para la lectura de Mangas, donde el
+              //   usuario puede interactuar con la página, comentar y hasta agregar
+              //   en su perfil su Manga Favorito.
+              // </p>
 //             </div>
 //           </div>
 //           <div className="flex w-full md:w-2/4 h-auto md:h-1/4 p-1 m-1 rounded-md shadow-2xl animate__animated animate__fadeInLeft">
@@ -124,8 +124,26 @@ import minga from "../../Img/minga.png";
 import petshop from "../../Img/petshop.png";
 import mingamobile from "../../Img/mingamobile.png";
 import matearmobile from "../../Img/matearmobile.png";
+import Swal from "sweetalert2";
+
 
 const Proyects = () => {
+
+  const handleLinkClick = (url) => {
+    Swal.fire({
+      title: "Redireccionar a YouTube",
+      text: "¿Deseas continuar?",
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: "Aceptar",
+      cancelButtonText: "Cancelar",
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.open(url, "_blank");
+      }
+    });
+  };
+  
   useEffect(() => {
     let progress = 50;
     let startX = 0;
@@ -209,46 +227,56 @@ const Proyects = () => {
       document.removeEventListener('touchend', handleMouseUp);
     };
   }, []);
-
   return (
     <div className="carousel">
+      <div id="glow2" />
+     
       <div className="carousel-item">
-        <div className="carousel-box">
-          <div className="title">Matear</div>
-          <div className="num">01</div>
-          <Img className="img" src={matear} alt="Matear" />
-        </div>
+        <a href="https://mate-ar.vercel.app/" target="_blank" className="carousel-link">
+          <div className="carousel-box">
+            <div className="title">Matear</div>
+            <Img className="img" src={matear} alt="Matear" />
+          </div>
+        </a>
       </div>
+  
       <div className="carousel-item">
-        <div className="carousel-box">
-          <div className="title">Mater Mobile</div>
-          <div className="num">02</div>
-          <Img className="img" src={matearmobile} alt="Matear Mobile" />
-        </div>
+        <a onClick={() => handleLinkClick("https://www.youtube.com/watch?v=PGmOuw-OhoQ&t=5s&ab_channel=LucasSantosDev")} className="carousel-link">
+          <div className="carousel-box">
+            <div className="title">Matear Mobile</div>
+            <Img className="img" src={matearmobile} alt="Matear Mobile" />
+          </div>
+        </a>
       </div>
+  
       <div className="carousel-item">
-        <div className="carousel-box">
-          <div className="title">Minga</div>
-          <div className="num">03</div>
-          <Img className="img" src={minga} alt="Minga" />
-        </div>
+        <a href="https://minga-gropublanco.vercel.app/" target="_blank" className="carousel-link">
+          <div className="carousel-box">
+            <div className="title">Minga</div>
+            <Img className="img" src={minga} alt="Minga" />
+          </div>
+        </a>
       </div>
+  
       <div className="carousel-item">
-        <div className="carousel-box">
-          <div className="title">Minga Mobile</div>
-          <div className="num">04</div>
-          <Img className="img" src={mingamobile} alt="Minga Mobile" />
-        </div>
+        <a onClick={() => handleLinkClick("https://youtu.be/7zwULEhREfQ")} className="carousel-link">
+          <div className="carousel-box">
+            <div className="title">Minga Mobile</div>
+            <Img className="img" src={mingamobile} alt="Minga Mobile" />
+          </div>
+        </a>
       </div>
+  
       <div className="carousel-item">
-        <div className="carousel-box">
-          <div className="title">PetShop</div>
-          <div className="num">05</div>
-          <Img className="img" src={petshop} alt="PetShop" />
-        </div>
+        <a href="https://lucasmsantoss.github.io/Pet-shop/" target="_blank" className="carousel-link">
+          <div className="carousel-box">
+            <div className="title">PetShop</div>
+            <Img className="img" src={petshop} alt="PetShop" />
+          </div>
+        </a>
       </div>
     </div>
   );
-};
-
+  }
+    
 export default Proyects;
