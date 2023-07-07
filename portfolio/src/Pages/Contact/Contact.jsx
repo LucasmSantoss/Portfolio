@@ -45,6 +45,7 @@ function Contact() {
 
   return (
     <div className="p-4 text-white">
+      
   <h2 className=" text-center text-2xl md:text-5xl p-4">
     Si quieres contactarte conmigo y dejarme un mensaje con tus datos,
     puedes hacerlo desde aquí!
@@ -102,7 +103,7 @@ function Contact() {
       Enviar
     </button>
   </form>
-  
+     
 </div>
 
   );

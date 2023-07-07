@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+@property --glow-color {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: #ADF5FF;
+}
+
+:root {
+  --gap: 0.5rem;
+  --triangle-base: 6rem;
+  --triangle-base-height: calc(1.732 * var(--triangle-base));
+  --triangle-width: calc(var(--triangle-base) - var(--gap));
+  --triangle-height: calc(var(--triangle-base-height) - var(--gap));
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #0D0C1D;
+  font-family: 'Bruno Ace', cursive;
+}
+
+.hero {
+  position: relative;
+  background: radial-gradient(#2C666E, #161B33);
+  background-size: 400% 400%;
+  background-position: 100% 100%;
+  height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2rem;
+  overflow: hidden;
+  animation: bg-animation 20s alternate infinite;
+}
+
+.hero2{
+  
+    background: radial-gradient(#2C666E, #161B33);
+    background-size: 400% 400%;
+    background-position: 100% 100%;
+   
+
+    overflow: hidden;
+    animation: bg-animation 20s alternate infinite;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(13, 12, 29, 0.8);
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 0 1rem rgba(13, 12, 29, 0.8);
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    width: 90%; /* Ajusta el ancho según tus necesidades */
+    max-width: 800px; /* Ajusta el ancho máximo según tus necesidades */
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.2rem; /* Ajusta el tamaño de fuente para dispositivos más pequeños */
+    }
+  }
+  
+
+@keyframes bg-animation {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 400% 400%;
+  }
+}
+
+
+
+#glow {
+  position: absolute;
+  width: 50vw;
+  height: 100vw;
+  background: radial-gradient(circle closest-side, var(--glow-color), transparent);
+  animation: glow-animation 5.2s ease infinite alternate;
+  transform: translate(-50%, -50%);
+}
+#glow2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50vw;
+    height: 50vw; /* Ajusta la altura según tus necesidades */
+    background: radial-gradient(circle closest-side, var(--glow-color), transparent);
+    animation: glow-animation 5.2s ease infinite alternate;
+    transform: translate(50%, 0); /* Actualiza el valor de la transformación */
+  }
+  
+  
+
+@keyframes glow-animation {
+  from {
+    --glow-color: #ADF5FF;
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  to {
+    --glow-color: #FF6978;
+    transform: translate(-50%, -50%) scale(1) rotate(90deg);
+  }
+}
+
+.triangle-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(6rem + 1vw), 1fr));
+  gap: 0.5rem;
+  margin-top: 2rem;
+  height: calc(100% - 4rem);
+}
+
+.triangle-set {
+  position: relative;
+  overflow: hidden;
+}
+
+.triangle-set--offset {
+  transform: translateX(calc(-1 * var(--triangle-base) - 0.5 * var(--gap)));
+}
+
+.triangle-set::before,
+.triangle-set::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: var(--gap);
+  border-right: var(--triangle-width) solid transparent;
+  border-left: var(--triangle-width) solid transparent;
+}
+
+.triangle-set::before {
+  left: calc(-1 * var(--triangle-base));
+  border-bottom: var(--triangle-height) solid #0D0C1D;
+}
+
+.triangle-set::after {
+  right: calc(var(--gap) * 2.5);
+  border-top: var(--triangle-height) solid #0D0C1D;
+}
+
+
