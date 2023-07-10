@@ -47,8 +47,7 @@ function Contact() {
     <div className="pt-12 p-4 text-white body animate-slide-in-left">
       
   <h2 className=" text-center text-2xl md:text-5xl p-4">
-    Si quieres contactarte conmigo y dejarme un mensaje con tus datos,
-    puedes hacerlo desde aquí!
+  Puedes contactarte conmigo desde aquí!
   </h2>
 
   <form
