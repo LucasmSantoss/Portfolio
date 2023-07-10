@@ -1,13 +1,12 @@
-import React from 'react';
-import Index from "../../Components/Index/Index.jsx"
+import React from "react";
+import Hero from "../../Components/Hero/Hero";
 
 function Home() {
-    return (
-        <div className='h-3/4'>
-            <Index/>
-            
-        </div>
-    );
+  return (
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
 export default Home;
