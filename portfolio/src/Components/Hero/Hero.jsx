@@ -24,13 +24,15 @@ const TriangleGrid = () => {
   }, []);
 
   return (
-    <div className="hero">
-      
-      <h1 className='text'>   Mi nombre es Lucas Matias Santos y soy Full Stack MERN Developer &amp; Mobile apps, desarrollo mis aplicaciones con estas tecnologias | HTML5 | CSS3 | Javascript | Tailwind | React | React Native | Express | MongoDB | SQL | NodeJS | Redux | Redux Toolkit | Github</h1>
-      <div className="triangle-container">
-    
+    <div className="hero body animate-slide-in-left">
+      <div className='h'>
+      <h1 className='text  '>   Mi nombre es Lucas Matias Santos y soy Full Stack MERN Developer &amp; Mobile apps, desarrollo mis aplicaciones con estas tecnologias | HTML5 | CSS3 | Javascript | Tailwind | React | React Native | Express | MongoDB | SQL | NodeJS | Redux | Redux Toolkit | Github</h1>
       </div>
+     
+      <div className="triangle-container ">
       <div id="glow" />
+      </div>
+
     </div>
   );
 };

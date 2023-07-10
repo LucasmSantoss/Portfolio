@@ -228,7 +228,7 @@ const Proyects = () => {
     };
   }, []);
   return (
-    <div className="carousel">
+    <div className="carousel animate-slide-in-left">
       <div id="glow2" />
      
       <div className="carousel-item">

@@ -9,8 +9,8 @@ function IndexLayout() {
  
 
   return (
-    <div className=" h-screen hero2" >
-      <Header />
+    <div className="hero2" >
+      <Header  />
       <Outlet  />
       <Footer />
     </div>

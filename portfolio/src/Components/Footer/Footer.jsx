@@ -3,12 +3,13 @@ import Img from "../Image/Image";
 import wp from "../../Img/wp.png";
 import github from "../../Img/GitHub.png";
 import linkedin from "../../Img/linkedin.png";
+import "./footer.css"
 
 function Footer() {
   return (
-    <div className="fixed bottom-0 left-0 right-0 flex flex-col lg:flex-row justify-around text-orange-600 p-5">
-      <div className="flex justify-center lg:justify-start items-center text-white">
-        <div className="flex m-3 p-1">
+    <div className="footer">
+      <div className="footer-links">
+        <div className="links">
           <Img className="h-7" src={wp} alt="WhatsApp" />
           <a
             target="_blank"
@@ -19,7 +20,7 @@ function Footer() {
             Whatsapp
           </a>
         </div>
-        <div className="flex m-3 p-1">
+        <div className="links">
           <Img className="h-7" src={github} alt="GitHub" />
           <a
             target="_blank"
@@ -30,7 +31,7 @@ function Footer() {
             GitHub
           </a>
         </div>
-        <div className="flex m-3 p-1">
+        <div className="links">
           <Img className="h-7" src={linkedin} alt="LinkedIn" />
           <a
             target="_blank"

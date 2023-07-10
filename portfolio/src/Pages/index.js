@@ -2,7 +2,7 @@ import Portfolio from "./Portfolio/Portfolio.jsx";
 import MainLayout from "../Layouts/MainLayout/MainLayout.jsx";
 import IndexLayout from "../Layouts/IndexLayout/IndexLayout.jsx";
 import Home from "./Home/Home.jsx";
-import Hero from "../Components/Hero/Hero.jsx"
+
 // import Recomendations from "./Recomendations/Recomendations.jsx";
 
 import { createBrowserRouter } from "react-router-dom";
@@ -12,8 +12,8 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <IndexLayout />,
-    // children: [{ path: "/", element: <Home /> },
-    children: [{ path: "/", element: <Hero /> },
+    children: [{ path: "/", element: <Home /> },
+   
     // { path: "/recomendations", element: <Recomendations /> },
     { path: "/contact", element: <Contact /> },
     ],
