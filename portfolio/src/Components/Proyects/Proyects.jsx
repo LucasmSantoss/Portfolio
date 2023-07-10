@@ -95,7 +95,8 @@ const Proyects = () => {
       progress = progress + mouseProgress;
       startX = x;
       animate();
-    };
+    };  
+    
 
     const handleMouseDown = (e) => {
       isDown = true;
@@ -124,14 +125,16 @@ const Proyects = () => {
       document.removeEventListener("touchend", handleMouseUp);
     };
   }, []);
-  return (
-    <div className="carousel animate-slide-in-left">
-      <div id="glow2" />
 
-      <div className="carousel-item">
+  return (
+    <div className="carousel animate-slide-in-left body">
+      
+
+      {/* <button className="carousel-arrow carousel-arrow-left" /> */}
+      <p className="animate-bounce text-white flex justify-center text-1xl pt-12 m-5"> Use the mouse wheel to move between projects!</p>
+      <div className="carousel-item ">
         <a
           onClick={() => handleLinkClick2("https://mate-ar.vercel.app/")}
-          
           className="carousel-link"
         >
           <div className="carousel-box">
@@ -159,8 +162,9 @@ const Proyects = () => {
 
       <div className="carousel-item">
         <a
-          onClick={() => handleLinkClick2("https://minga-gropublanco.vercel.app/")}
-        
+          onClick={() =>
+            handleLinkClick2("https://minga-gropublanco.vercel.app/")
+          }
           className="carousel-link"
         >
           <div className="carousel-box">
@@ -184,8 +188,9 @@ const Proyects = () => {
 
       <div className="carousel-item">
         <a
-          onClick={() => handleLinkClick2("https://lucasmsantoss.github.io/Pet-shop/")}
-        
+          onClick={() =>
+            handleLinkClick2("https://lucasmsantoss.github.io/Pet-shop/")
+          }
           className="carousel-link"
         >
           <div className="carousel-box">
@@ -194,6 +199,8 @@ const Proyects = () => {
           </div>
         </a>
       </div>
+      <div id="glow" />
+      <button className="carousel-arrow carousel-arrow-right" />
     </div>
   );
 };
