@@ -47,7 +47,7 @@ function Contact() {
     <div className="pt-12 p-4 text-white body animate-slide-in-left">
       
   <h2 className=" text-center text-2xl md:text-5xl p-4">
-  Puedes contactarte conmigo desde aquí!
+  You can contact me from here!
   </h2>
 
   <form
@@ -56,7 +56,7 @@ function Contact() {
   >
     <div className="grid grid-cols-1 gap-4">
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl underline underline-offset-41"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Nombre:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-41"  style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Name:</span>
         <input
           className={`text-black w-full md:w-96 h-8 p-2  ${
             name ? "bg-white" : "bg-transparent"
@@ -69,7 +69,7 @@ function Contact() {
       </label>
 
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Email:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Mail:</span>
         <input
           className={`text-black w-full md:w-96 h-8 p-2  ${
             email ? "bg-white" : "bg-transparent"
@@ -82,7 +82,7 @@ function Contact() {
       </label>
 
       <label className="flex flex-col gap-1">
-        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Mensaje:</span>
+        <span className="text-lg rounded-md shadow-2xl underline underline-offset-4" style={{ textShadow: '2px 2px 4px rgba(0, 0, 0, 1.5)' }}>Message:</span>
         <textarea
           className={`text-black w-full md:w-96 p-2 ${
             message ? "bg-white" : "bg-transparent"
