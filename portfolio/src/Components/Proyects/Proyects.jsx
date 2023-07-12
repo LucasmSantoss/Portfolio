@@ -6,6 +6,7 @@ import minga from "../../Img/minga.png";
 import petshop from "../../Img/petshop.png";
 import mingamobile from "../../Img/mingamobile.png";
 import matearmobile from "../../Img/matearmobile.png";
+import calculator from "../../Img/calculator.png";
 import Swal from "sweetalert2";
 
 const Proyects = () => {
@@ -174,6 +175,19 @@ const Proyects = () => {
         </a>
       </div>
 
+      <div className="carousel-item">
+        <a
+          onClick={() =>
+            handleLinkClick2("https://calculator-six-bay.vercel.app/")
+          }
+          className="carousel-link"
+        >
+          <div className="carousel-box">
+            <div className="title">Scientific Calculator in progress</div>
+            <Img className="img" src={calculator} alt="Calculator" />
+          </div>
+        </a>
+      </div>
       <div className="carousel-item">
         <a
           onClick={() => handleLinkClick("https://youtu.be/7zwULEhREfQ")}
