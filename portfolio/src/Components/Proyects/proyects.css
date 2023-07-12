@@ -10,8 +10,8 @@
   --items: 10;
   --width: clamp(150px, 30vw, 1000px);
   --height: clamp(200px, 40vw, 400px);
-  --x: calc(var(--active) * 600%);
-  --y: calc(var(--active) * 200%);
+  --x: calc(var(--active) * 700%);
+  --y: calc(var(--active) * 300%);
   --rot: calc(var(--active) * 120deg);
   --opacity: calc(var(--zIndex) / var(--items) * 3 - 2);
   overflow: hidden;
