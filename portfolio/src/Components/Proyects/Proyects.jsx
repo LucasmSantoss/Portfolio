@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./proyects.css";
 import Img from "../Image/Image";
 import matear from "../../Img/matearr.png";
@@ -6,10 +6,17 @@ import minga from "../../Img/minga.png";
 import petshop from "../../Img/petshop.png";
 import mingamobile from "../../Img/mingamobile.png";
 import matearmobile from "../../Img/matearmobile.png";
+import nextmovie from "../../Img/nextmovie.png"
 import calculator from "../../Img/calculator.png";
 import Swal from "sweetalert2";
+import rigtharrow from "../../Img/flechaderecha.png";
+import leftarrow from "../../Img/flechaizquierda.png"
 
 const Proyects = () => {
+
+  const [showDescription, setShowDescription] = useState(false);
+  const [progress, setProgress] = useState(50);
+
   const handleLinkClick = (url) => {
     Swal.fire({
       title: "Redireccionar a YouTube",
@@ -40,6 +47,27 @@ const Proyects = () => {
     });
   };
 
+  const handleHover = () => {
+    setShowDescription(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowDescription(false);
+  };
+
+
+  const handleArrowClick = (direction) => {
+    setProgress((prevProgress) => {
+      if (direction === "next") {
+        return Math.min(prevProgress + 10, 100);
+      } else if (direction === "prev") {
+        return Math.max(prevProgress - 10, 0);
+      }
+      return prevProgress;
+    });
+  };
+
+
   useEffect(() => {
     let progress = 50;
     let startX = 0;
@@ -48,6 +76,8 @@ const Proyects = () => {
 
     const speedWheel = 0.02;
     const speedDrag = -0.1;
+
+  
 
     const getZindex = (array, index) =>
       array.map((_, i) =>
@@ -125,15 +155,28 @@ const Proyects = () => {
       document.removeEventListener("touchmove", handleMouseMove);
       document.removeEventListener("touchend", handleMouseUp);
     };
+
+  
+    
   }, []);
 
   return (
     <div className="carousel animate-slide-in-left body">
       
 
-      {/* <button className="carousel-arrow carousel-arrow-left" /> */}
+    
       <p className="animate-bounce text-white flex justify-center text-1xl pt-12 m-5"> Use the mouse wheel to move between projects!</p>
-      <div className="carousel-item ">
+      <div className={`carousel-item ${showDescription ? "show-description" : ""}`}
+      
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+>
+<button
+        className="carousel-arrow carousel-arrow-left"
+        onClick={() => handleArrowClick("prev")}
+      >
+        <Img src={leftarrow} alt="Previous" />
+      </button>
         <a
           onClick={() => handleLinkClick2("https://mate-ar.vercel.app/")}
           className="carousel-link"
@@ -143,26 +186,48 @@ const Proyects = () => {
             <Img className="img" src={matear} alt="Matear" />
           </div>
         </a>
+        {showDescription  && (
+          <div className="description">
+            <h2>Tecnologies</h2>
+            <p>React Native | MongoDB | Nodejs | Express</p>
+          </div>
+        )}
       </div>
 
-      <div className="carousel-item">
+      <div className={`carousel-item ${showDescription ? "show-description" : ""}`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}
+>
         <a
+
+          
           onClick={() =>
             handleLinkClick(
               "https://www.youtube.com/watch?v=PGmOuw-OhoQ&t=5s&ab_channel=LucasSantosDev"
             )
           }
           className="carousel-link"
+          
         >
+          
           <div className="carousel-box">
             <div className="title">Matear Mobile</div>
             <Img className="img" src={matearmobile} alt="Matear Mobile" />
           </div>
         </a>
+        {showDescription  && (
+          <div className="description">
+            <h2>Tecnologies</h2>
+            <p>React Native | MongoDB | Nodejs | Express</p>
+          </div>
+        )}
       </div>
 
-      <div className="carousel-item">
+      <div className={`carousel-item ${showDescription ? "show-description" : ""}`}
+        onMouseEnter={handleHover}
+        onMouseLeave={handleMouseLeave}>
         <a
+        
           onClick={() =>
             handleLinkClick2("https://minga-gropublanco.vercel.app/")
           }
@@ -173,21 +238,14 @@ const Proyects = () => {
             <Img className="img" src={minga} alt="Minga" />
           </div>
         </a>
+        {showDescription  && (
+          <div className="description">
+            <h2>Tecnologies</h2>
+            <p>React Native | MongoDB | Nodejs | Express</p>
+          </div>
+        )}
       </div>
 
-      <div className="carousel-item">
-        <a
-          onClick={() =>
-            handleLinkClick2("https://calculator-six-bay.vercel.app/")
-          }
-          className="carousel-link"
-        >
-          <div className="carousel-box">
-            <div className="title">Scientific Calculator in progress</div>
-            <Img className="img" src={calculator} alt="Calculator" />
-          </div>
-        </a>
-      </div>
       <div className="carousel-item">
         <a
           onClick={() => handleLinkClick("https://youtu.be/7zwULEhREfQ")}
@@ -198,6 +256,10 @@ const Proyects = () => {
             <Img className="img" src={mingamobile} alt="Minga Mobile" />
           </div>
         </a>
+        <div className="description">
+         <h2>Tecnologies</h2>
+         <p>React Native | MongoDB | Nodejs | Express</p>
+        </div>
       </div>
 
       <div className="carousel-item">
@@ -212,9 +274,54 @@ const Proyects = () => {
             <Img className="img" src={petshop} alt="PetShop" />
           </div>
         </a>
+        <div className="description">
+         <h2>Tecnologies</h2>
+         <p>React Native | MongoDB | Nodejs | Express</p>
+        </div>
+      </div>
+      
+      <div className="carousel-item">
+        <a
+          onClick={() =>
+            handleLinkClick2("https://calculator-six-bay.vercel.app/")
+          }
+          className="carousel-link"
+        >
+          <div className="carousel-box">
+            <div className="title">Scientific Calculator 👨‍🔧🛠🛠</div>
+            <Img className="img" src={calculator} alt="Calculator" />
+          </div>
+        </a>
+        <div className="description">
+         <h2>Tecnologies</h2>
+         <p>React Native | MongoDB | Nodejs | Express</p>
+        </div>
+      </div>
+      <div className="carousel-item">
+        <a
+          // onClick={() =>
+          //   handleLinkClick2("https://lucasmsantoss.github.io/Pet-shop/")
+          // }
+          className="carousel-link"
+        >
+          <div className="carousel-box">
+            <div className="title">Next Movie 👨‍🔧🛠🛠</div>
+            <Img className="img" src={nextmovie} alt="PetShop" />
+          </div>
+        </a>
+        <button
+        className="carousel-arrow carousel-arrow-right"
+        onClick={() => handleArrowClick("next")}
+      >
+        <Img src={rigtharrow} alt="Next" />
+      </button>
+        <div className="description">
+         <h2>Tecnologies</h2>
+         <p>React Native | MongoDB | Nodejs | Express</p>
+        </div>
       </div>
       <div id="glow" />
-      <button className="carousel-arrow carousel-arrow-right" />
+  
     </div>
   );
 };
