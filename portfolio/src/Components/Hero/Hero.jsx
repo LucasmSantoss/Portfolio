@@ -24,7 +24,7 @@ const TriangleGrid = () => {
   }, []);
 
   return (
-    <div className="hero body animate-slide-in-left">
+    <div className="hero body animate-slide-in-down">
       <div className=''>
       <h1 className='text p-12'>  My name is Lucas Matias Santos and I am a Full Stack MERN Developer &amp; Mobile apps, I develop my applications with these technologies | HTML5 | CSS3 | Javascript | Tailwind | React | ReactNative | Express | MongoDB | SQL | NodeJS | Redux | Redux Toolkit | Github</h1>
       </div>
