@@ -1,39 +1,57 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import './hero.css';
 
+import Typed from 'typed.js';
+
 const TriangleGrid = () => {
-  const [columns, setColumns] = useState(0);
+  
 
   useEffect(() => {
-    const triangleBase = 48;
-
-    const instantiateGrid = () => {
-      const width = window.innerWidth;
-      const height = window.innerHeight * 0.4;
-
-      const calculatedColumns = Math.ceil(width / (triangleBase * 2)) + 1;
-      setColumns(calculatedColumns);
+    // TYPING EFFECT
+    const options = {
+      strings: [
+        'My name is Lucas Matias Santos and I am a Full Stack MERN Developer & Mobile apps,',
+        'I develop my applications with these technologies',
+        ' | HTML5 | CSS3 | Javascript | Tailwind |',
+        'React | ReactNative | Express | MongoDB | SQL | NodeJS | ',
+        ' Redux | Redux Toolkit | Github',
+      ],
+      typeSpeed: 3,
+      backSpeed: 12,
+      startDelay: 1000,
+      backDelay: 1200,
+      loop: true,
+      contentType: 'html',
     };
 
-    window.addEventListener('resize', instantiateGrid);
-    instantiateGrid();
+    const typed = new Typed('#typed', options);
 
     return () => {
-      window.removeEventListener('resize', instantiateGrid);
+      typed.destroy(); // Cleanup on unmount to prevent memory leaks
     };
   }, []);
 
+
+
   return (
     <div className="hero body animate-slide-in-down">
-      <div className=''>
-      <h1 className='text p-12'>  My name is Lucas Matias Santos and I am a Full Stack MERN Developer &amp; Mobile apps, I develop my applications with these technologies | HTML5 | CSS3 | Javascript | Tailwind | React | ReactNative | Express | MongoDB | SQL | NodeJS | Redux | Redux Toolkit | Github</h1>
+       <div className="vert-text">
+        <div className="p-img">
+                
+        </div>
+        <h1 id="typer-size">
+          {/* TEXTS */}
+          <span id="typed"></span>
+          <div id="typed-strings">
+          </div>
+          {/* TEXTS ENDS */}
+        </h1>
+        {/* TITLE */}
       </div>
-     
-      <div className="triangle-container ">
       <div id="glow" />
       </div>
 
-    </div>
+    
   );
 };
 
