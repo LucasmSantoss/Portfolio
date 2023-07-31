@@ -171,12 +171,12 @@ const Proyects = () => {
         onMouseEnter={handleHover}
         onMouseLeave={handleMouseLeave}
 >
-<button
+{/* <button
         className="carousel-arrow carousel-arrow-left"
         onClick={() => handleArrowClick("prev")}
       >
         <Img src={leftarrow} alt="Previous" />
-      </button>
+      </button> */}
         <a
           onClick={() => handleLinkClick2("https://mate-ar.vercel.app/")}
           className="carousel-link"
@@ -309,12 +309,12 @@ const Proyects = () => {
             <Img className="img" src={nextmovie} alt="PetShop" />
           </div>
         </a>
-        <button
+        {/* <button
         className="carousel-arrow carousel-arrow-right"
         onClick={() => handleArrowClick("next")}
       >
         <Img src={rigtharrow} alt="Next" />
-      </button>
+      </button> */}
         <div className="description">
          <h2>Tecnologies</h2>
          <p>React Native | MongoDB | Nodejs | Express</p>
