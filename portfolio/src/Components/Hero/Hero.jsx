@@ -16,7 +16,7 @@ const TriangleGrid = () => {
         'React | ReactNative | Express | MongoDB | SQL | NodeJS | ',
         ' Redux | Redux Toolkit | Github',
       ],
-      typeSpeed: 3,
+      typeSpeed: 15,
       backSpeed: 12,
       startDelay: 1000,
       backDelay: 1200,
