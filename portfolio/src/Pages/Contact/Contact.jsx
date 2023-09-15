@@ -11,11 +11,15 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceID = "service_v0f4h7m";
-    const templateID = "template_ncuocj5";
+   
+    const {
+      REACT_APP_EMAILJS_SERVICE_ID: serviceID,
+      REACT_APP_EMAILJS_TEMPLATE_ID: templateID,
+      REACT_APP_EMAILJS_USER_ID: userID,
+    } = process.env;
 
     emailjs
-      .sendForm(serviceID, templateID, e.target, "C5ms-eweBW0SHhINO")
+      .sendForm(serviceID, templateID, e.target, userID)
       .then((result) => {
         console.log(result.text);
         setName("");
