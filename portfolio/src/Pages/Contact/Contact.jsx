@@ -62,6 +62,7 @@ function Contact() {
             name ? "bg-white" : "bg-transparent"
           } border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500`}
           type="text"
+          name='from_name'
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
@@ -75,6 +76,7 @@ function Contact() {
             email ? "bg-white" : "bg-transparent"
           } border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500`}
           type="email"
+          name='user_email'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
@@ -89,6 +91,7 @@ function Contact() {
           } border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-blue-500`}
           style={{ height: "10rem" }}
           value={message}
+          name='message'
           onChange={(e) => setMessage(e.target.value)}
           required
         />
