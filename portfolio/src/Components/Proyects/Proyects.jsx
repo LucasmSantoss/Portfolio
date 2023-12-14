@@ -229,7 +229,7 @@ const Proyects = () => {
         <a
         
           onClick={() =>
-            handleLinkClick2("https://minga-gropublanco.vercel.app/")
+            handleLinkClick2("https://mingaweb-5vmn.vercel.app/")
           }
           className="carousel-link"
         >
