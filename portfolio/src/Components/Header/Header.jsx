@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Img from "../Image/Image";
 import favi from "../../Img/favicon.png";
 import { NavLink as Anchor } from "react-router-dom";
-import "./header.css"; // Importa el archivo de estilos
+import "./header.css"; 
 
 function Header() {
   const [showNav, setShowNav] = useState(false);

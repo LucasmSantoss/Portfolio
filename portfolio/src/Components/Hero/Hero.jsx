@@ -10,9 +10,9 @@ const TriangleGrid = () => {
     // TYPING EFFECT
     const options = {
       strings: [
-        'My name is Lucas Matias Santos and I am a Full Stack MERN Developer & Mobile apps,',
+        'My name is Lucas Matias Santos and I am a QA Tester | Full Stack MERN Developer & Mobile apps,',
         'I develop my applications with these technologies',
-        ' | HTML5 | CSS3 | Javascript | Tailwind |',
+        ' | HTML5 | CSS3 | Javascript | Java | Selenium | Tailwind |',
         'React | ReactNative | Express | MongoDB | SQL | NodeJS | ',
         ' Redux | Redux Toolkit | Github',
       ],
